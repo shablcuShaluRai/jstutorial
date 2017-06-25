@@ -23,7 +23,7 @@
 
 
 //string index
-var index=0;
+/*var index=0;
 var str="djfklfairdkfrjinfifnghgkg";
 var len=str.length;
 console.log("total lenght of string "+len);
@@ -31,4 +31,11 @@ while (index<len) {
   console.log(index,str[index]);
   index++;
 
-}
+}*/
+
+//string object
+var name="shalu";
+console.log(typeof name); //string
+var name1=new String("shalu");
+console.log(typeof name1);//object
+console.log(name==name1);//returns true because it has same value
