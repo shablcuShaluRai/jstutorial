@@ -39,3 +39,4 @@ console.log(typeof name); //string
 var name1=new String("shalu");
 console.log(typeof name1);//object
 console.log(name==name1);//returns true because it has same value
+console.log(name===name1);//it returns false, because operator checks the type and value both.
