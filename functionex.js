@@ -24,7 +24,20 @@ console.log(sum(4,13));
 
 
 // function hoisting: can be called before declaration
-console.log(add(3,4));
+/*console.log(add(3,4));
 function add(a,b){
 return a+b;
+}*/
+
+// max method
+
+function max(){
+var i;
+var max = -Infinity;
+for (var i = 0; i < arguments.length; i++) {
+  if(arguments[i]>max)
+  max=arguments[i];
 }
+return max;
+}
+console.log(max(2,4,6));
