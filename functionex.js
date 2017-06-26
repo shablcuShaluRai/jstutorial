@@ -30,11 +30,11 @@ return a+b;
 }*/
 
 // invoke function itself
-(function () {
+/*(function () {
     var x = "Hello!!";
     console.log(x);
 })();
-
+*/
 // max method
 
 /*function max(){
@@ -63,3 +63,22 @@ return min;
 }
 console.log(min(2,4,6));
 */
+
+
+//With call(), you can write a method once and then inherit it in another object,
+// without having to rewrite the method for the new object.
+
+var  person = {
+  fname:"shalu",
+  lname:"rai",
+  fullname:function(){
+    return this.fname + " " +this.lname;
+  }
+}
+
+var friend ={
+  fname: " john",
+  lname: " kali"
+}
+
+console.log(person.fullname.call(friend));
