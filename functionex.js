@@ -29,11 +29,18 @@ function add(a,b){
 return a+b;
 }*/
 
+// invoke function itself
+(function () {
+    var x = "Hello!!";
+    console.log(x);
+})();
+
 // max method
 
-function max(){
+/*function max(){
 var i;
 var max = -Infinity;
+//argument object  contains an array of the argument used  when the function was called.
 for (var i = 0; i < arguments.length; i++) {
   if(arguments[i]>max)
   max=arguments[i];
@@ -41,3 +48,18 @@ for (var i = 0; i < arguments.length; i++) {
 return max;
 }
 console.log(max(2,4,6));
+
+*/
+
+/*function min(){
+var i;
+var min = Infinity;
+//argument object  contains an array of the argument used  when the function was called.
+for (var i = 0; i < arguments.length; i++) {
+  if(arguments[i]<min)
+  min=arguments[i];
+}
+return min;
+}
+console.log(min(2,4,6));
+*/
