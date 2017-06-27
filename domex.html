@@ -1,12 +1,23 @@
 <html>
 <head>
-<title> DOM HTML EXAMPLE</title>
+<title> </title>
 </head>
 <body>
  <h1 id = "demo"> dom html </h1>
  <p id = " demo1"> dom means document object model </p>
+ <p> we can call by using getElementBytagname </p>
+ <p> implementation of getElementsByTagName.</p>
+ <p id ="demo3"> </p>
 <script>
-document.getElementById("demo").innerHTML= "DOM HTML";
+// finding element by using by id
+//document.getElementById("demo").innerHTML= "DOM HTML";
+
+// finding element by using the tag name.
+
+var tag=document.getElementsByTagName("p");
+document.getElementById("demo3").innerHTML= "yup getElementByTagName working here ,"+tag[2].innerHTML;
+
+
 </script>
 </body>
 </html>
