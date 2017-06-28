@@ -8,15 +8,27 @@
 <p>Hello Editor!</p>
 
 <p id="demo"></p>
+<button onclick="myFunction()">click me</button>
 <script>
 // The getElementsByTagName() method returns an HTMLCollection object.
 
 //var mycollection = document.getElementsByTagName('p');
 //document.getElementById('demo').innerHTML = "hey "+ mycollection[0].innerHTML;
 
-var mycollection = document.getElementsByTagName("p");
-document.getElementById("demo").innerHTML =
-"This document contains " + mycollection.length + " paragraphs.";
+// var mycollection = document.getElementsByTagName("p");
+// document.getElementById("demo").innerHTML =
+// "This document contains " + mycollection.length + " paragraphs.";
+
+
+
+
+function myFunction() {
+    var myCollection = document.getElementsByTagName("p");
+    var i;
+    for (i = 0; i < myCollection.length; i++) {
+        myCollection[i].style.color = "red";
+    }
+}
 
 </script>
 </body>
