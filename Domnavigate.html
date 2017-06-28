@@ -1,14 +1,33 @@
+<!-- 1.<html> -->
+<!-- <body> -->
+<!-- <h1 id="di"> dom navigation</h> -->
+  <!-- <p id="d2"></p> -->
+
+    <!-- <script> -->
+<!-- //access the element by 3 method in dom navigation. -->
+    <!-- document.getElementById('d2').innerHTML= -->
+  <!-- //  document.getElementById('di').innerHTML; -->
+  <!-- //  document.getElementById('di').firstChild.nodeValue; -->
+  <!-- document.getElementById("di").childNodes[0].nodeValue; -->
+    <!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
 <html>
 <body>
-<h1 id="di"> dom navigation</h>
-  <p id="d2"></p>
 
-    <script>
+<p>Hello Javascript!</p>
+<div>
+<p>The DOM Navigation  is very useful.</p>
+<p>This example demonstrates the <b>document.body</b> property.</p>
+</div>
 
-    document.getElementById('d2').innerHTML=
-  //  document.getElementById('di').innerHTML;
-  //  document.getElementById('di').firstChild.nodeValue;
-  document.getElementById("di").childNodes[0].nodeValue;
-    </script>
+<script>
+// dom root node - document.body.
+// alert(document.body.innerHTML);
+alert(document.documentElement.innerHTML);
+</script>
+
 </body>
 </html>
