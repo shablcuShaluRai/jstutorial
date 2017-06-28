@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello dom collection!</p>
+
+<p>Hello Editor!</p>
+
+<p id="demo"></p>
+<script>
+// The getElementsByTagName() method returns an HTMLCollection object.
+
+//var mycollection = document.getElementsByTagName('p');
+//document.getElementById('demo').innerHTML = "hey "+ mycollection[0].innerHTML;
+
+var mycollection = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML =
+"This document contains " + mycollection.length + " paragraphs.";
+
+</script>
+</body>
+</html>
