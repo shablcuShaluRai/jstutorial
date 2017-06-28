@@ -1,0 +1,44 @@
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: red;
+}
+</style>
+<body>
+  <p>
+<button onclick="myMove()">Click Me</button>
+</p>
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 250) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+</script>
+
+<h2>My First JavaScript Animation</h2>
+<!-- all animation should be realtive to container element. -->
+<div id="container">
+<div id="animate"></div>
+</div>
+
+</body>
+</html>
