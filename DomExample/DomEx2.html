@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>
+  Dom Example</title>
+</head>
+<body>
+
+<h1>  Dom html example by using class</h1>
+<p class="intro"> dom is very useful </p>
+<p class="intro"> demonsration of dom html  class</p>
+<p id = "demo"></p>
+
+<script>
+// finding element by class name
+//var x=document.getElementsByClassName("intro");
+//document.getElementById("demo").innerHTML = "  by class name  acessed" + x[0].innerHTML;
+
+//finding element by  css selector.
+
+// .class is a selector who select all element of with class.
+var x= document.querySelectorAll("p.intro")
+document.getElementById("demo").innerHTML = " <b> css selector  acessed </b>" + x[0].innerHTML;
+
+</script
+
+</body>
+
+</html>

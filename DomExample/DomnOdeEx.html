@@ -1,0 +1,32 @@
+<html>
+<body>
+  <div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is second paragraph.</p>
+  </div>
+  <script>
+  <!-- //to add new element in html  firstly,create an element. -->
+   var para = document.createElement("p");
+  <!-- // create a text node -->
+  -var node = document.createTextNode("This is text node.");
+  <!-- //then append child node -->
+   para.appendChild(node);
+
+<!-- // this code find existing element . -->
+   var element = document.getElementById("div1");
+  <!-- //add the new element to existing element. -->
+  element.appendChild(para);
+
+/*  var parent = document.getElementById("div1");
+  var child = document.getElementById("p1");
+  parent.removeChild(child);
+*/
+
+/*  var element = document.getElementById("div1");
+  var child = document.getElementById("p1");
+  element.insertBefore(para,child);
+*/
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+ <h1 id = "demo"> dom html </h1>
+
+<p id = " demo1"> dom means document object model </p>
+<div id = "main">
+   <p> we can call by using getElementBytagname </p>
+   <p> implementation of getElementsByTagName.</p>
+
+</div>
+
+ <p id ="demo3"> </p>
+<script>
+//document.write used for change the hftml output stream.
+//document.write(Date());
+
+
+// finding element by using by id
+//document.getElementById("demo").innerHTML= "DOM HTML";
+
+// finding element by using the tag name.
+
+//var tag=document.getElementsByTagName("p");
+//document.getElementById("demo3").innerHTML= "yup getElementByTagName working here ,"+tag[2].innerHTML;
+
+//finds the element of id main ,then aal paragraph inside this id.
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo3").innerHTML = " the first paragraph in the main id is "+ y[0].innerHTML;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!-- 1.<html> -->
+<!-- <body> -->
+<!-- <h1 id="di"> dom navigation</h> -->
+  <!-- <p id="d2"></p> -->
+
+    <!-- <script> -->
+<!-- //access the element by 3 method in dom navigation. -->
+    <!-- document.getElementById('d2').innerHTML= -->
+  <!-- //  document.getElementById('di').innerHTML; -->
+  <!-- //  document.getElementById('di').firstChild.nodeValue; -->
+  <!-- document.getElementById("di").childNodes[0].nodeValue; -->
+    <!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+<!-- 2.<html> -->
+
+<!-- <body> -->
+<!-- <p>Hello Javascript!</p> -->
+<!-- <div> -->
+<!-- <p>The DOM Navigation  is very useful.</p> -->
+<!-- <p>This example demonstrates the <b>document.body</b> property.</p> -->
+<!-- </div> -->
+
+<!-- <script> -->
+<!-- // dom root node - document.body. -->
+<!-- // alert(document.body.innerHTML); -->
+<!-- alert(document.documentElement.innerHTML); -->
+<!-- </script> -->
+<!--  -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+
+<!-- 3.<html> -->
+<!-- <body> -->
+
+<!-- <h1 id="id1">dom navigation</h1> -->
+
+<!-- <p id="id2"></p> -->
+<!-- <script> -->
+<!-- //node name always return the value in uppercase -->
+<!-- document.getElementById("id2").innerHTML = document.getElementById("id1").nodeName; -->
+<!-- </script> -->
+
+<!-- </body> -->
+<!-- </html> -->
+
+
+<html>
+<body>
+
+<h1 id="id1">dom navigation tutorial</h1>
+<p id="id2"></p>
+
+<script>
+// node-ELEMENT_NODE	nodetype-1	example<h1 class="heading">W3Schools</h1>
+document.getElementById("id2").innerHTML = document.getElementById("id1").nodeType;
+</script>
+
+</body>
+</html>

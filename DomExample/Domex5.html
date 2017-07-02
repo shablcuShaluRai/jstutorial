@@ -1,0 +1,42 @@
+<html>
+<body>
+
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="myButton"> click me</button>
+<p id ="demo"></p>
+
+<!--1. <script> -->
+ <!--// The addEventListener() method attaches an event handler to  the specified element -->
+ <!--// or without overwriting existing event handlers. -->
+<!-- document.getElementById('myButton').addEventListener("click",DisplayDate); -->
+ <!-- document.getElementById('myButton').addEventListener("click",name); -->
+<!-- // we can add many eventlistener in DOM file. -->
+<!-- function DisplayDate() { -->
+  <!-- document.getElementById('demo').innerHTML=Date(); -->
+<!-- } -->
+<!-- function name() { -->
+  <!-- alert("hey,  me shalu"); -->
+
+<!-- } -->
+<!-- </script> -->
+<!-- 2.   adding many event listener -->
+<script>
+var x = document.getElementById("myButton");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", myFunction1);
+x.addEventListener("mouseout", myFunction2);
+function myFunction() {
+    document.getElementById("demo").innerHTML += "Moused over!<br>";
+}
+
+function myFunction1() {
+    document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myFunction2() {
+    document.getElementById("demo").innerHTML += "Moused out!<br>";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h2>JavaScript HTML DOM!</h2>
+
+<p>Hello javascript !</p>
+
+<p>Hello paragraph!</p>
+
+<p id="demo"></p>
+<button onclick="myFunction()">click me </button>
+<script>
+// var mynodelist= document.querySelectorAll("p");
+//document.getElementById("demo").innerHTML = "the innerHTML of the paragraph "+mynodelist.length+" number " +mynodelist[0].innerHTML;
+function myFunction() {
+    var mynodelist = document.querySelectorAll("p");
+    var i;
+    for (i = 0; i < mynodelist.length; i++) {
+        mynodelist[i].style.color = "red";
+    }
+}
+
+</script>
+</body>
+</html>
